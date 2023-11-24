@@ -1,0 +1,33 @@
+{
+    "name": "refbytes/filament-laravel-scout",
+    "description": "Adds indexing actions to filament resources",
+    "type": "library",
+    "require": {
+        "filament/support": "^3.0",
+        "spatie/laravel-package-tools": "^1.16",
+        "laravel/scout": "^9.0|^10.0"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Refbytes\\FilamentLaravelScout\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Jon Fackrell",
+            "email": "jon.fackrell@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Refbytes\\FilamentLaravelScout\\FilamentLaravelScoutServiceProvider"
+            ]
+        }
+    },
+    "require-dev": {
+        "laravel/pint": "dev-main"
+    }
+}
